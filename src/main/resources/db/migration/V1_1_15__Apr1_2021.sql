@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS `coupon`;
+CREATE TABLE  `coupon` (
+  id BIGINT NOT NULL AUTO_INCREMENT,
+  user_uuid VARCHAR(20) DEFAULT NULL,
+  coupon_name VARCHAR(255) DEFAULT NULL,
+  coupon_code VARCHAR(255) DEFAULT NULL,
+  coupon_value VARCHAR(255) DEFAULT NULL,
+  display_offer VARCHAR(255) DEFAULT NULL,
+  minimum_order VARCHAR(255) DEFAULT NULL,
+  discount_type VARCHAR(255) DEFAULT NULL,
+  expire_date DATE DEFAULT NULL,
+  coupon_applicable VARCHAR(255) DEFAULT NULL,
+  usage_limit VARCHAR(255) DEFAULT NULL,
+  created_date DATETIME,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8;
